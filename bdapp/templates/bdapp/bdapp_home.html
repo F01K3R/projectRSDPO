@@ -1,19 +1,19 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}База данных{% endblock %}
+{% block title %}Страница отчетов{% endblock %}
 
 {% block content %}
     <div class="featrues">
-        <h1>База данных</h1>
-        <p>Текст</p>
+        <h1>Страница отчетов</h1>
+        <p>Страница содержит различные шаблоны отчетов</p>
         <form action="{% url 'histogram' %}">
-            <button class="btn btn-warning">Отобразить гистограму</button>
+            <button class="btn btn-warning">Гистограмма результатов по предметам</button>
         </form>
         <form action="{% url 'pie_chart' %}">
-            <button class="btn btn-warning">Отобразить Диаграмму</button>
+            <button class="btn btn-warning">Круговая диаграмма процентов выполнения</button>
         </form>
         <form action="{% url 'score_range_histogram' %}">
-            <button class="btn btn-warning">Отобразить Гистограму</button>
+            <button class="btn btn-warning">График по количеству студентов в разных балльных диапазонах:</button>
         </form>
     </div>
 {% endblock %}
